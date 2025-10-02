@@ -51,10 +51,6 @@ body {
   z-index: 100;
 }
 
-#devs {
-  display: none;
-}
-
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
@@ -119,7 +115,7 @@ body {
   align-items: center;
 }
 
-.hero-text h1 {
+.hero-text h2 {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.1;
@@ -456,7 +452,7 @@ body.dark-mode .footer-switch img {
     text-align: center;
   }
 
-  .hero-text h1 {
+  .hero-text h2 {
     font-size: 42px;
   }
 
