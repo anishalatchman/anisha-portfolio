@@ -14,7 +14,7 @@
   --gradient-purple: #c587b2;
   --gradient-blue: #458bdc;
   --gradient-yellow: #f4b942;
-  --gradient-orange: #ff9666;
+  --gradient-orange: #d29511;
 }
 
 /* Dark Mode Colors */
@@ -176,6 +176,40 @@ body {
 
 .highlight-purple {
   color: var(--gradient-purple);
+}
+
+.word-cycle {
+  display: inline-block;
+  min-width: 200px;
+}
+
+.word-cycle::before {
+  content: "Creatives";
+  animation: cycle 5s ease forwards;
+  color: var(--gradient-blue);
+}
+
+@keyframes cycle {
+  0%,
+  22% {
+    content: "Creatives";
+    color: var(--gradient-blue);
+  }
+  25%,
+  47% {
+    content: "Engineers";
+    color: var(--gradient-yellow);
+  }
+  50%,
+  72% {
+    content: "Storytellers";
+    color: var(--gradient-orange);
+  }
+  75%,
+  100% {
+    content: "Developers";
+    color: var(--gradient-purple);
+  }
 }
 
 /* --- Software Engineering Cards Grid --- */
