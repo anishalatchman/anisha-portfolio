@@ -163,7 +163,7 @@ body {
   font-size: 42px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 48px;
+  margin-bottom: 36px;
 }
 
 .highlight-blue {
@@ -331,7 +331,7 @@ body.dark-mode .project-card:hover {
 
 .about-image img {
   width: 100%;
-  max-width: 405px;
+  max-width: 400px;
   border-radius: 16px;
 }
 
