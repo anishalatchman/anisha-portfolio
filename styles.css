@@ -51,6 +51,10 @@ body {
   z-index: 100;
 }
 
+#devs {
+  display: none;
+}
+
 .nav-wrapper {
   display: flex;
   justify-content: space-between;
