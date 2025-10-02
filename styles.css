@@ -449,6 +449,7 @@ body.dark-mode .footer-switch img {
 
   .hero-text {
     padding: 0px;
+    text-align: center;
   }
 
   .hero-text h1 {
@@ -456,7 +457,7 @@ body.dark-mode .footer-switch img {
   }
 
   .hero-image img {
-    margin-right: 8px;
+    margin-right: 4px;
   }
 
   .projects-grid {
@@ -548,10 +549,7 @@ body.dark-mode .footer-switch img {
     flex-direction: column;
   }
 
-  .section.devrel-section .project-small-row {
-    margin-bottom: 100px;
-  }
-
+  .section.devrel-section .project-small-row,
   .section.engineering-section .project-small-row {
     margin-bottom: 100px;
   }
@@ -560,12 +558,7 @@ body.dark-mode .footer-switch img {
     display: none;
   }
 
-  .section.devrel-section {
-    display: grid;
-  }
-
   .section.about-section {
-    display: grid;
     padding-bottom: 24px;
   }
 }
