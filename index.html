@@ -154,66 +154,77 @@
         <h2 class="section-title">
           Developer <span class="highlight-yellow">Relations</span>
         </h2>
-        <div class="devrel-grid">
+        <!-- First Set (Original Layout) -->
+        <div class="projects-flex" style="margin-bottom: 24px">
+          <!-- Large card on the left -->
           <a
             href="https://www.microsoft.com/en-us/security/blog/2025/07/22/microsoft-sentinel-data-lake-unify-signals-cut-costs-and-power-agentic-ai/"
             target="_blank"
           >
-            <div class="devrel-card">
+            <div class="project-card large">
               <img
                 src="assets/Microsoft Security Blog.png"
                 alt="Graph RAG for Security Intern Insights"
               />
               <div class="card-content">
-                <h3>Graph RAG for Security: Intern...</h3>
+                <h3>Graph RAG for Security: Intern Insights</h3>
                 <p>Microsoft Security Community Blog</p>
-                <span class="card-label"
-                  >Graph RAG for Security: Intern Insights</span
-                >
               </div>
             </div>
           </a>
+          <!-- Medium card on the right -->
           <a href="https://www.youtube.com/watch?v=gv5fRtBk8IM" target="_blank">
-            <div class="devrel-card">
-              <img src="assets/Microsoft Learn.png" alt="Microsoft Learn" />
-              <div class="card-content">
-                <h3>Microsoft Learn</h3>
-                <p>Graphython on Mr. Maeda's Cozy AI Kitchen</p>
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://www.linkedin.com/feed/update/urn:li:activity:7377016147201765376/"
-            target="_blank"
-          >
-            <div class="devrel-card">
+            <div class="project-card medium">
               <img
-                src="assets/Accelerate AI with Google.png"
-                alt="Accelerate AI with Google"
+                src="assets/Microsoft Learn.png"
+                alt="GraphRAG on Mr. Maeda's Cozy AI Kitchen"
               />
               <div class="card-content">
-                <h3>Accelerate AI with Google</h3>
-                <p>Explainer Video</p>
+                <h3>GraphRAG on AI Kitchen</h3>
+                <p>Microsoft Learn Video</p>
               </div>
             </div>
           </a>
-          <a
-            href="https://www.linkedin.com/feed/update/urn:li:activity:7311598719462719488/"
-            target="_blank"
-          >
-            <div class="devrel-card">
-              <img
-                src="assets/Agentic AI in 2 minutes.png"
-                alt="Agentic AI in 2 minutes"
-              />
-              <div class="card-content">
-                <h3>Agentic AI in 2 minutes</h3>
-                <p>Explainer Video</p>
+          <!-- Small cards beneath medium card -->
+          <div class="project-small-row">
+            <a
+              href="https://www.linkedin.com/feed/update/urn:li:activity:7377016147201765376/"
+              target="_blank"
+            >
+              <div class="project-card small">
+                <img
+                  src="assets/Accelerate AI with Google.png"
+                  alt="Accelerate AI with Google"
+                />
+                <div class="card-content">
+                  <h3>Accelerate AI with Google</h3>
+                  <p>Explainer Video</p>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+            <a
+              href="https://www.linkedin.com/feed/update/urn:li:activity:7311598719462719488/"
+              target="_blank"
+            >
+              <div class="project-card small">
+                <img
+                  src="assets/Agentic AI in 2 minutes.png"
+                  alt="Agentic AI in 2 minutes"
+                />
+                <div class="card-content">
+                  <h3>Agentic AI in 2 minutes</h3>
+                  <p>Explainer Video</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Second Set (Flipped Layout) -->
+        <div class="projects-flex" style="margin-top: 24px">
+          <!-- Medium card on the left -->
           <a href="https://www.youtube.com/watch?v=kivf493_a6w" target="_blank">
-            <div class="devrel-card large">
+            <div class="project-card medium">
               <img
                 src="assets/Apple Application.png"
                 alt="Why Developer Relations?"
@@ -224,48 +235,55 @@
               </div>
             </div>
           </a>
+          <!-- Large card on the right -->
           <a
             href="https://engineering.wealthsimple.com/how-wealthsimple-ships-new-features"
             target="_blank"
           >
-            <div class="devrel-card">
+            <div class="project-card large" style="grid-column: 2">
               <img
                 src="assets/Wealthsimple Blog.png"
-                alt="Wealthsimple Engineering Blog"
+                alt="How Wealthsimple Ships New Features"
               />
               <div class="card-content">
-                <h3>Wealthsimple Engineering Blog</h3>
-                <p>How Wealthsimple Ships New Features</p>
+                <h3>How Wealthsimple Ships New Features</h3>
+                <p>Wealthsimple Engineering Blog</p>
               </div>
             </div>
           </a>
-          <a
-            href="https://anishalatchman.github.io/devs-guide/"
-            target="_blank"
-          >
-            <div class="devrel-card">
-              <img
-                src="assets/Text Wrap Balance Blog.png"
-                alt="Guide to Text Wrap Balance"
-              />
-              <div class="card-content">
-                <h3>Guide to Text Wrap Balance</h3>
-                <p>Apple Application Blog</p>
+          <!-- Small cards beneath medium card -->
+          <div class="project-small-row" style="grid-column: 1">
+            <a
+              href="https://anishalatchman.github.io/devs-guide/"
+              target="_blank"
+            >
+              <div class="project-card small">
+                <img
+                  src="assets/Text Wrap Balance Blog.png"
+                  alt="Guide to Text Wrap Balance"
+                />
+                <div class="card-content">
+                  <h3>Guide to Text Wrap Balance</h3>
+                  <p>Apple Application Blog</p>
+                </div>
               </div>
-            </div>
-          </a>
-          <a href="https://www.youtube.com/watch?v=VXwD-ZAYirM" target="_blank">
-            <div class="devrel-card">
-              <img
-                src="assets/My FreshBooks Internship.jfif"
-                alt="My FreshBooks Internship"
-              />
-              <div class="card-content">
-                <h3>My FreshBooks Internship</h3>
-                <p>Recap Video</p>
+            </a>
+            <a
+              href="https://www.youtube.com/watch?v=VXwD-ZAYirM"
+              target="_blank"
+            >
+              <div class="project-card small">
+                <img
+                  src="assets/My FreshBooks Internship.jfif"
+                  alt="My FreshBooks Internship"
+                />
+                <div class="card-content">
+                  <h3>My FreshBooks Internship</h3>
+                  <p>Recap Video</p>
+                </div>
               </div>
-            </div>
-          </a>
+            </a>
+          </div>
         </div>
       </div>
     </section>
