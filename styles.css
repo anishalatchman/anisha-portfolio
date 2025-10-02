@@ -144,14 +144,15 @@ body {
 }
 
 .hero-image img {
-  width: 210%;
+  width: 150%;
   object-fit: contain;
   object-position: center;
+  margin-right: 64px;
 }
 
 /* Section Styles */
 .section {
-  padding: 90px 0 0 0;
+  padding: 70px 0 0 0;
   background-color: var(--secondary-bg);
 }
 
@@ -163,7 +164,7 @@ body {
   font-size: 42px;
   font-weight: 700;
   text-align: center;
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 }
 
 .highlight-blue {
@@ -374,7 +375,8 @@ body.dark-mode .project-card:hover {
 .footer {
   background-color: var(--secondary-bg) !important;
   padding: 40px 0 24px 0;
-  text-align: center;
+  text-align: left;
+  justify-content: space-around;
 }
 
 .footer p {
@@ -427,8 +429,15 @@ body.dark-mode .footer-switch img {
   filter: invert(1) brightness(2) saturate(100%) !important;
 }
 
-/* Responsive Design */
-@media (max-width: 968px) {
+/* Tablet Styles */
+@media (max-width: 920px) {
+  .hero-text {
+    padding: 80px 0px 0px 0px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
   .hero {
     padding: 100px 10px 0 10px;
   }
@@ -438,8 +447,16 @@ body.dark-mode .footer-switch img {
     gap: 40px;
   }
 
+  .hero-text {
+    padding: 0px;
+  }
+
   .hero-text h1 {
     font-size: 42px;
+  }
+
+  .hero-image img {
+    margin-right: 8px;
   }
 
   .projects-grid {
@@ -466,9 +483,15 @@ body.dark-mode .footer-switch img {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-}
 
-@media (max-width: 640px) {
+  .hero {
+    padding: 0px 0px 0px 0px;
+  }
+
+  body.dark-mode .logo {
+    color: black;
+  }
+
   .nav {
     gap: 16px;
   }
@@ -485,6 +508,13 @@ body.dark-mode .footer-switch img {
     font-size: 16px;
   }
 
+  .hero-content {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 24px;
+    padding-bottom: 24px;
+  }
+
   .section-title {
     font-size: 32px;
   }
@@ -498,12 +528,9 @@ body.dark-mode .footer-switch img {
   }
 
   .section {
-    padding: 60px 0 0 0;
+    padding: 48px 0 0 0;
   }
-}
 
-/* Mobile Styles */
-@media (max-width: 768px) {
   .projects-flex {
     grid-template-columns: 1fr;
     grid-template-rows: none;
