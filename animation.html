@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lava Lamp Blobs</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+        font-family: "Inter", sans-serif;
+        overflow: hidden;
+      }
+
+      .container {
+        position: relative;
+        width: 80vmin;
+        height: 80vmin;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .lava-lamp-container {
+        position: absolute;
+        bottom: 7%;
+        width: 150%;
+        height: 150%;
+        background-color: #f7e3ac;
+        overflow: hidden;
+
+        /* Upside-down triangle */
+        clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+        -webkit-clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+      }
+
+      .blob-container {
+        position: absolute;
+        animation: float 20s infinite ease-in-out;
+      }
+
+      .blob {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(ellipse, #608ad8 50%, #b486b0 65%);
+        border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+        transform: scale(1, 0.5); /* Oblong shape */
+        /* Applying shadow to the blob itself */
+        box-shadow: 0 0 25px 20px rgb(253, 170, 102);
+      }
+
+      /* Pseudo-elements and inner divs for layers */
+      .blob::before,
+      .blob::after,
+      .inner-blob-1,
+      .inner-blob-2 {
+        content: "";
+        position: absolute;
+        border-radius: 50% 50% 50% 50% / 40% 40% 60% 60%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      /* light blue */
+      .blob::before {
+        width: 95%;
+        height: 90%;
+        background: radial-gradient(ellipse, #608ad8 50%, #1a2c94 80%);
+        transform: translate(-50%, -50%) scale(0.9, 0.8);
+      }
+
+      /* dark blue */
+      .inner-blob-1 {
+        width: 90%;
+        height: 70%;
+        background: radial-gradient(ellipse, #608ad8 40%, #1a2c94 70%);
+        transform: translate(-50%, -50%) scale(0.8, 0.7);
+      }
+
+      /* purple */
+      .blob::after {
+        border-radius: 50% 50% 50% 50%;
+        width: 45%;
+        height: 45%;
+        background: radial-gradient(ellipse, #608ad8 20%, #b486b0 70%);
+        transform: translate(-50%, -50%) scale(0.7, 0.7); /* Perfect circle */
+      }
+
+      .blob-1 {
+        width: 350px;
+        height: 550px;
+        left: 55%;
+        top: 18%;
+        transform: translate(-100%, 50%); /* Positioned to the left */
+        animation-delay: -3s;
+      }
+
+      .blob-2 {
+        width: 350px;
+        height: 550px;
+        left: 5%;
+        top: 18%;
+        transform: translate(0, 50%); /* Positioned to the right */
+        animation-delay: -8s;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0) translateX(0) rotate(0);
+        }
+        25% {
+          transform: translateY(-20px) translateX(10px) rotate(10deg);
+        }
+        50% {
+          transform: translateY(20px) translateX(-10px) rotate(-10deg);
+        }
+        75% {
+          transform: translateY(-10px) translateX(20px) rotate(5deg);
+        }
+      }
+
+      .hero-image {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 50%;
+        height: auto;
+        z-index: 10;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- The user's image is now on top -->
+      <img src="assets/AnishaHero.png" alt="AnishaHero" class="hero-image" />
+
+      <div class="lava-lamp-container">
+        <div class="blob-container blob-1">
+          <div class="blob">
+            <div class="inner-blob-1"></div>
+          </div>
+        </div>
+        <div class="blob-container blob-2">
+          <div class="blob">
+            <div class="inner-blob-1"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
